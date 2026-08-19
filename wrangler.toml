@@ -1,0 +1,9 @@
+name = "enochyu-view-counter-db"
+compatibility_date = "2026-06-03"
+main = "src/index.ts"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "enochyu-view-counter-db"
+database_id = "73c4f097-3a4a-4220-8c6e-fd57510d8357"
+
