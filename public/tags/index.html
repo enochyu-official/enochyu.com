@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://enochyu.com/" />
 
 
-<link rel="stylesheet" href="/css/bundle.min.3d259d4942b138f5624e05c29518d97227bc430da37e4989cd572e70255654e5.css" integrity="sha256-PSWdSUKxOPViTgXClRjZcie8Qw2jfkmJzVcucCVWVOU=">
+<link rel="stylesheet" href="/css/bundle.min.968431e6565f79878703adcee1357acff3590e49d0196b9665c6df01a47d909a.css" integrity="sha256-loQx5lZfeYeHA63O4TV6z/NZDknQGWuWZcbfAaR9kJo=">
 
 <script type="application/ld+json">
 {
@@ -43,10 +43,11 @@
   
   <footer class="footer">
   <div>
+    <div id="view-count">Total Visits: Loading...</div>
+    <div id="footer-day">Last Updated: <span id="today"></span></div>
     <a href="https://github.com/enochyu-official" target="_blank" rel="noopener noreferrer">
       &copy; 2026 Enoch Yu. All Rights Reserved.
     </a>
-    <div id="view-count">Total Visits: Loading...</div>
   </div>
 
   <script>
@@ -70,6 +71,16 @@
     };
   </script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+  <script>
+    const date = new Date();
+
+    document.getElementById("today").textContent =
+      date.toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+      });
+  </script>
 </footer>
 
 
