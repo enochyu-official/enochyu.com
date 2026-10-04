@@ -24,17 +24,26 @@ hr.styled-hr::after {
   width: 90vw;
   margin: 1rem auto;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .index-current p {
+  width: 90%;
   font-size: 1rem;
-  margin: 0 0 12px;
+  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .index-current ul {
   font-size: 1rem;
-  margin-left: 2rem;
-  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+#index-current-iam {
+  margin-bottom: 0.3rem !important;
 }
 
 
