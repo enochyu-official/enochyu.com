@@ -1,8 +1,9 @@
 baseURL = 'https://enochyu.com/'
 title = 'Enoch Yu'
-defaultContentLanguage = 'en'
+locale = 'en-us'
 
 enableRobotsTXT = true
+disableKinds = ["section", "taxonomy"]
 
 [params]
 author = "Enoch Yu"
